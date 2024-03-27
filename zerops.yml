@@ -1,0 +1,9 @@
+zerops:
+  - setup: helloworld 
+    build: 
+      base: go@1
+      buildCommands: 
+        - go build -o app main.go 
+      deploy: app 
+    run: 
+      start: ./app 
