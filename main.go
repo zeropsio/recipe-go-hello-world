@@ -10,7 +10,6 @@ import (
 func main() {
         router := gin.Default()
         router.GET("/", getHelloWorld)
-        router.GET("/hello-world", getHelloWorld)
         log.Fatal(router.Run(":8080"))
 }
 
